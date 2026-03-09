@@ -6,7 +6,7 @@ import warnings
 import joblib
 import requests
 
-url = "http://127.0.0.1:8000/predict"
+url = "http://44.223.75.58/predict"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "model/model_v1.pkl")
 
@@ -176,3 +176,4 @@ while True:
         print("Request failed:", e)
 
     time.sleep(REQUEST_INTERVAL_SECONDS)
+
