@@ -38,7 +38,7 @@ col1, col2, col3 = st.columns(3)
 
 col1.metric("Safe Predictions", safe_count)
 col2.metric("Danger Predictions", danger_count)
-col3.metric("Total Predictions", safe_count - danger_count)
+# col3.metric("Total Predictions", safe_count - danger_count)
 
 fig1, ax1 = plt.subplots()
 prediction_counts.plot(kind="bar", ax=ax1)
